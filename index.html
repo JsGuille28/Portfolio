@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Portfolio</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/estilos.css" rel="stylesheet" />
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="bubbles">
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:24;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:23;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:19;"></span>
+            <span style="--i:20;"></span>
+            <span style="--i:22;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:21;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:28;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:24;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:23;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:19;"></span>
+            <span style="--i:20;"></span>
+            <span style="--i:22;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:21;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:28;"></span>                               
+        </div>
+    </div>
+
+
+    <section id="inicio">
+        <div class="seccion-principal">
+            <header>
+                <div class="contenedor-header">
+                    <h1>JG</h1>
+                    <nav id="barra-navegacion" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" onclick="seleccionMenu(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionMenu(this)">SOBREMÍ</a></li>
+                            <li><a href="#habilidades" onclick="seleccionMenu(this)">HABILIDADES</a></li>
+                            <li><a href="#servicio" onclick="seleccionMenu(this)">SERVICIOS</a></li>
+                            <li><a href="#proyectos" onclick="seleccionMenu(this)">PROYECTOS</a></li>
+                            <li><a href="#contacto" onclick="seleccionMenu(this)">CONTÁCTAME</a></li>
+                        </ul>
+
+                    </nav> 
+
+                    
+                    <!--Icono de las barras-->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <!--Icono de mis redes-->
+                    <div class="iconos-redes">
+                        <a href="https://www.facebook.com/jsguilleu/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/jsguille/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://twitter.com/Eletrn2" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+
+                </div>
+            </header>
+
+           <div class="presentacion">
+            <img src="./imagenes/Dragon.png" class="img-dragon">
+                <p class="txt-bienvenida">
+                    <b class="letra-arriba">¡</b><a id="letra-abajo">B</a><b class="letra-arriba">i</b><a id="letra-abajo">e</a><b class="letra-arriba">n</b><a id="letra-abajo">v</a><b class="letra-arriba">e</b><a  id="letra-abajo">n</a><b class="letra-arriba">i</b><a id="letra-abajo">d</a><b class="letra-arriba">@</b><a id="letra-abajo">s</a><b class="letra-arriba">!</b>
+                </p>
+                <h2 class="nombre-profesion">Mi nombre es <a id="nombre">José Guillermo Urbáez</a> <br>
+                <span id="profesion"></span></h2>
+                <p id="descripcion">
+                    Tengo 22 años y soy un desarrollador Junior Fullstack. 
+                    Ofreciendo siempre servicios de calidad
+                </p>
+                    <a href="#proyectos" id="btn-proyectos">Ir al Protfolio</a>
+            
+        </div>
+    </section>
+
+
+    <section id="sobremi">
+        <div class="foto-contenedor" id="foto-contenedor">
+            <img class="mifoto" id="mifoto" src="./imagenes/miFoto.png"/>
+        </div>
+
+        <div class="sobremi">
+            <p class="seccion-titulo">Sobre Mi - About Me</p>
+            <h2>¡Hey!, mi nombre es <span>José G. Urbáez</span></h2>
+            <h3>Desarrollador Fullstack</h3>
+            <p>Soy José Guillermo Urbáez, tengo 22 años y egresado de ING. de Sistemas<br> 
+                Computacionales en la <span class="universidad-nombre">
+                Universidad Nacional Pedro Henríquez Ureña.</span></p>
+            <p>Principalmente me desempeño como programador FullStack Junior. <br>
+                Sin embargo, también puedo dar Soporte Técnico, trabajar con Bases de Datos, <br>
+                Diseño Gráfico (Photoshop), clases particulares y ser Analista de Sistemas.
+            </p>
+            <a id="btn-curriculo" target="_blank" href="https://drive.google.com/file/d/1ePgghMyo6eBZdhYpWoKf7WKz_BojKeg4/view?usp=sharing" >Descargar CV</a>
+        </div>
+    </section>
+
+    <!--Sección de Habilidades-->
+    <section class="contenedor-habilidades" id="habilidades">
+        <h3>Habilidades</h3>
+        <div class="habilidad">
+            <div class="informacion">
+            <p><span class="lista"></span>CSS, HTML</p>
+            <span class="procentaje">95%</span>
+        </div>
+        <div class="barra-carga">
+            <div id="html" class=""></div>
+        </div>
+    </div>
+
+    <div class="habilidad">
+        <div class="informacion">
+        <p><span class="lista"></span>Microsoft Office</p>
+        <span class="procentaje">95%</span>
+    </div>
+    <div class="barra-carga">
+        <div id="office" class=""></div>
+        </div>
+    </div>
+
+    
+    <div class="habilidad">
+        <div class="informacion">
+        <p><span class="lista"></span>PL/SQL (Oracle), MySQL y SQL</p>
+        <span class="procentaje">90%</span>
+        </div>
+        <div class="barra-carga">
+            <div id="base-datos" class=""></div>
+        </div>
+    </div>
+
+    <div class="habilidad">
+        <div class="informacion">
+        <p><span class="lista"></span>Python</p>
+        <span class="procentaje">85%</span>
+        </div>
+    <div class="barra-carga">
+        <div id="python" class=""></div>
+    </div>
+    </div>
+
+    <div class="habilidad">
+        <div class="informacion">
+        <p><span class="lista"></span>Javascript</p>
+        <span class="procentaje">80%</span>
+    </div>
+    <div class="barra-carga">
+        <div id="js" class=""></div>
+        </div>
+    </div>
+
+    <div class="habilidad">
+        <div class="informacion">
+        <p><span class="lista"></span>Inglés</p>
+        <span class="procentaje">80%</span>
+    </div>
+    <div class="barra-carga">
+        <div id="ingles" class=""></div>
+        </div>
+    </div>
+    </section>
+
+
+    <!--Sección de mis Servicios-->
+    <section id="servicio">
+        <h3 class="seccion-titulo">Mis Servicios</h3>
+        <div class="filas">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-database"></i></span>
+                <h4>Bases de Datos</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>SQL</li>
+                    <li>ORACLE</li>
+                    <li>MySQL</li>
+                </ul>
+                <p>Cración y Mantenimiento de Base de Datos Relacionales. 
+                    Dominio de DDL y DML con SQL, MYSQL y PL/SQL (Oracle)</p>
+            </div>
+
+            <div class="servicio">
+                <span class="icono"><i class="fa-brands fa-python"></i></span>
+                <h4>Simulación con Python</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Python</li>
+                    <li>Simulación</li>
+                    <li>Hacking</li>
+                </ul>
+                <p>Programación Estructurada, Orientada a Objetos con Pyton y Simulaciones o Predicciones.</p>
+            </div>
+
+
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Lenguajes Java y C#</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Java</li>
+                    <li>C#</li>
+                    <li>POO</li>
+                </ul>
+                <p>Programación Estructurada y Orientada a Objetos con los lenguajes Java y C#</p>
+            </div>            
+
+        </div>
+
+        <div class="filas">
+            <div class="servicio">
+                <span class="icono"><i class="fa-brands fa-js"></i></span>
+                <h4>Diseño Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>JavaScript</li>
+                    <li>HTML</li>
+                    <li>React</li>
+                </ul>
+                <p>Diseño Web con lenguajes HTML5, CSS3, Javascript y manejo del Framework React JS</p>
+            </div>
+            
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-wrench"></i></span>
+                <h4>Soporte Técnico</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Reparación</li>
+                    <li>CPU</li>
+                    <li>HelpDesk</li>
+                </ul>
+                <p>Soporte Técnico Para Computadoras y Helpdesk. Reparación de equipos.</p>
+            </div>
+
+
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-laptop-code"></i></span>
+                <h4>Analista de Sistemas</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Software</li>
+                    <li>Diseño</li>
+                    <li>Diagramas</li>
+                </ul>
+                <p>Análisis y Diseño de Sistemas Computacionales, Dragramas
+                    de Flujos, Actividades, Casos de Uso, etc.</p>
+            </div>            
+
+        </div>
+    </section>
+    
+    <!--Sección de Proyectos-->
+
+    <section id="proyectos" class="proyectos">
+        <h3 class="titulo-seccion">Mis proyectos</h3>
+        <div class="fila">
+
+            <div class="proyecto">
+                <div class="overlay"></div>
+                    <img src="imagenes/imagenes-proyectos/diseño-grafico.jpg" alt="" width="400px" height="500px">
+                    <div class="info">
+                        <h4>Descripción del Proyecto</h4>
+                        <p>Edición de Imágenes con Photoshop y After Effects</p>
+                    </div>
+            </div>
+
+
+            <div class="proyecto">
+                <div class="overlay"></div>
+                    <img src="imagenes/imagenes-proyectos/veterinaria.png" alt="">
+                    <div class="info">
+                        <h4>Descripción del Proyecto</h4>
+                        <p>Diseño y Programación de Aplicación para veterinaria</p>
+                    </div>
+            </div>
+
+            
+            <div class="proyecto">
+                <div class="overlay"></div>
+                    <img src="imagenes/imagenes-proyectos/diseño-sistemas.jpg" alt="">
+                    <div class="info">
+                        <h4>Descripción del Proyecto</h4>
+                        <p>Diseño de un Sistema de Pagos en Línea</p>
+                    </div>
+            </div>
+
+        </div>
+        
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                    <img src="imagenes/imagenes-proyectos/videojuegos.jpg" alt="">
+                    <div class="info">
+                        <h4>Descripción del Proyecto</h4>
+                        <p>Porgramación de Videojuegos con Javascript, Unity y Unreal Engine 4</p>
+                    </div>
+            </div>
+
+            <div class="proyecto">
+                <div class="overlay"></div>
+                    <img src="imagenes/imagenes-proyectos/algoritmo.png" alt="">
+                    <div class="info">
+                        <h4>Descripción del Proyecto</h4>
+                        <p>Análisis y Diseño de Diagramas de Flujos y Algoritmos de Programación</p>  
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <div class="overlay"></div>
+                    <img src="imagenes/imagenes-proyectos/database.png" alt="">
+                    <div class="info">
+                        <h4>Descripción del Proyecto</h4>
+                        <p>Programación de Scripts para Bases de Datos Relacionales: SQL, ORACLE y MYSQL</p>
+                    </div>
+            </div>
+        </div>
+
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay">
+                    <img src="imagenes/imagenes-proyectos/medicina.png" alt="">
+                    <div class="info">
+                        <h4>Descripción del Proyecto</h4>
+                        <p>Análisis, Diseño y Programación de Aplicación para Reistro de Pacientes en un Hospital</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <div class="overlay">
+                    <img src="imagenes/imagenes-proyectos/calificaciones.png" alt="">
+                    <div class="info">
+                        <h4>Descripción del Proyecto</h4>
+                        <p>Diseño, Análisis y Programación de Applicación de Escritorio Para Academia Educativa</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <div class="overlay"></div>
+                    <img src="imagenes/imagenes-proyectos/simulacion.png" alt="">
+                    <div class="info">
+                        <h4>Descripción del Proyecto</h4>
+                        <p>Simulaciones y Predicciones con Python: EJ: Predicción de Posición de Planetas del Sistema Solar</p>
+                    </div>
+                </div>
+        </div>
+
+    </section>
+
+
+    <section id="linea-aprendizaje">
+        <h4 class="titulo-seccion">Resumen Historial</h4>
+            <div class="fila">
+                <div class="contenedor">
+                    
+                    <div class="circulo">2015 - Estudios Secundarios
+                    </div>
+                </div>
+
+                <div class="contenedor">
+                    <div class="circulo">2018 - Técnico en Informática</div>
+                </div>
+
+                <div class="contenedor">
+                    <div class="circulo">2019 - SQL y MYSQL</div>
+                </div>
+
+                <div class="contenedor">
+                    <div class="circulo">2021-2024 - ORACLE</div>
+                </div>
+
+                <div class="contenedor">
+                    <div class="circulo">2024 - JavaScaript y ReactJS</div>
+                </div>
+
+                <div class="contenedor">
+                    <div class="circulo">2024 - Egresado en Ing. de Sistemas</div>
+                </div>
+                    
+                    
+                    
+                    
+            </div>
+        </div>
+        
+       
+    </section>
+
+
+    <section id="contacto" class="contacto">
+        <h3 class="titulo-seccion">Contáctame</h3>
+        <div class="contenedor-formulario">
+            <form action="" id="form-mensaje">
+                <div class="fila mitad">
+                <input type="text" placeholder="Introduzca su Nombre" class="input-mitad" id="nombre" name="nombre">
+                <input type="text" placeholder="E-mail" class="input-mitad" id="email" name="email">
+            </div>
+
+            <div class="fila">
+                <input type="text" placeholder="Asunto" class="input-full" id="asunto" name="asunto">
+            </div>
+
+            <div class="fila">
+                <textarea name="" id="" cols="38" rows="18" placeholder="Mensaje" class="input-full" id="mensaje" name="mensaje"></textarea>
+            </div>
+            
+            <button type="button" class="btn-enviar btn btn-danger" id="btn-enviar" onclick="enviarCorreo()">Enviar</button>
+
+            </form>
+
+            <div class="location">
+                <h4>¿Dónde encontrarme?</h4>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7569.087276102198!2d-69.91241233723267!3d18.45901851674535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ea56278ff55ef2b%3A0xcabc24597752f1fa!2zRXN0YWNpw7NuIEFtw61uIEFiZWwgSGFzYsO6biwgTDE!5e0!3m2!1ses!2sdo!4v1710877132302!5m2!1ses!2sdo" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe width="800" height="450" src="https://www.youtube.com/embed/b6dPHjpZl7A?si=i-7hc1Sp6JreJdJj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--Creando mi footer-->
+    <footer>
+        <div class="container-fluid">
+            <div class="row text-white">
+                <div class="col-xs-12 col-md-6 col-lg-4">
+                    <p class="h3">Desarrollador:</p>
+                    <p class="h5 text-danger">José Guillermo Urbáez Féliz ©</p>
+                </div>
+                
+                <div class="col-xs-12 col-md-6 col-lg-4">
+                    <p class="h5 mb-3">Servicios</p>
+                    
+                    <div class="mb-9 ">
+                        <ul class="list-unstyled text-secondary">
+                            <li>SQL, Oracle MySQL</li>
+                            <li>Soporte Técnico</li>
+                            <li>Python, C# y Java</li>
+                            <li>MS Office</li>
+                            <li>HTML, CSS y Javascript</li>
+                                
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-md-6 col-lg-4">
+                    <p class="h5">Links</p>
+                    <div class="mb-2">
+                        <ul class="list-unstyled text-secondary">
+                            <li>Terms & Conditions</li>
+                            <li>Privacity</li>
+                        </ul>
+                    
+                </div>
+        </div>
+
+        <div class="col-xs-12 pt-4">
+            <p class="h4 text-white text-center">Copyright y todos los derechos reservados © 2024</p>
+        </div>
+
+        <div class="redes">
+            <a href="https://www.facebook.com/jsguilleu/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/jsguille/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://twitter.com/Eletrn2" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+
+    </footer>
+
+    <canvas id="canvas"></canvas>
+
+    <script src="js/particulas.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
+
+</body>
+</html>

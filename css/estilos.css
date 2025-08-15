@@ -1,0 +1,1329 @@
+/*
+Mis estilos CSS3
+*/
+
+body{
+    background-color: rgb(12, 12, 12);
+    color: white;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+header{
+    z-index: 100;
+}
+
+#inicio{
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('../imagenes/fondo3.png');
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    z-index: 100;
+    
+}
+
+#inicio .seccion-principal header{
+    background-color: rgba(0, 0, 0, .7);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+    z-index: 100;
+}
+
+#inicio .seccion-principal header .contenedor-header {
+    max-width: 1100px;
+    padding: 10px 20px;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+#inicio .seccion-principal header .contenedor-header .seleccionado {
+    color: #f53a3a;
+    font-weight: 600;
+}
+
+#inicio .seccion-principal header .contenedor-header h1{
+    text-align: center;
+    color: linear-gradient(45deg, rgba(19,19,19,1) 0%, rgba(252,252,252,1) 58%, rgba(19,19,19,1) 100%);
+    z-index: 100;
+
+}
+
+#inicio .seccion-principal header .contenedor-header nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 400;
+    color: white;
+    transition: .6s;
+    font-size: large;
+}
+
+a:hover{
+    
+    cursor: pointer;
+    color: goldenrod;
+    
+}
+
+ul li{
+    transition: 0.5s;
+}
+
+ul li:hover{
+    transform: scale(1.3);
+}
+
+#inicio .seccion-principal .presentacion{
+    margin: auto;
+    columns: #ffff;
+    display: flex;
+    height: 100vh;
+    max-width: 1100px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#inicio .seccion-principal .presentacion .txt-bienvenida{
+
+    font-size: 30px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+#inicio .seccion-principal .presentacion h2{
+    font-size: 55px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#inicio .seccion-principal .presentacion h2 #nombre{
+    color: goldenrod;
+    font-size: 45px;
+}
+
+#inicio .seccion-principal .presentacion h2 #profesion{
+    color: rgb(169, 253, 201);
+}
+
+
+.nombre-profesion span{
+    position: relative;
+    
+}
+
+.nombre-profesion span::before{
+    content: "Ingeniero de Sistemas";
+    color: rgb(255, 53, 53);
+    animation: palabras 20s infinite;
+    filter: blur(8px);
+}
+
+.nombre-profesion span::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    filter: blur(5px);
+    border-left: 2px solid rgb(255, 53, 53);
+    right: -8px;
+    animation: cursor .8s infinite,
+               escribiendo 20s steps(14) infinite ;
+}
+@keyframes escribiendo {
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
+        width: 0;
+        
+    }
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%{
+        width: calc(100% + 8px);
+        
+        
+    }
+    
+}
+@keyframes cursor{
+    to{
+        border-left: 2px solid rgb(31, 31, 31);
+    }
+}
+
+@keyframes palabras {
+    0%, 10%{
+        filter: blur(8px);
+    }
+    11%, 20%{
+        content: "Ingeniero de Sistemas";
+        text-shadow: 0 0 3px #ffffff, 0 0 5px #ffffff;
+        color: rgb(255, 53, 53);
+        filter: blur(1px);
+        filter: none;
+        
+    } 
+    21%, 31%{
+        filter: blur(8px);
+        
+    }
+    32%, 41%{
+        content: "Programador Fullstack";
+        text-shadow: 0 0 3px #ffffff, 0 0 5px #ffffff;
+        color: rgb(51, 82, 255);
+        filter: blur(1px);
+        filter: none;
+    }
+    42%, 52% {
+        filter: blur(8px);
+        
+    }
+    53%, 62%{
+        content: "Diseñador Gráfico";
+        text-shadow: 0 0 3px #ffffff, 0 0 5px #ffffff;
+        color: rgb(201, 63, 255);
+        filter: blur(1px);
+        filter: none;
+    }
+
+    63%, 73%{
+        filter: blur(8px);
+        
+    }
+
+    74%, 83%{
+        content: "Soporte Técnico";
+        text-shadow: 0 0 3px #ffffff, 0 0 5px #ffffff;
+        color: rgb(255, 233, 137);
+        filter: blur(1px);
+        filter: none;
+    }
+
+    84%, 93%{
+        filter: blur(8px);
+        
+    }
+
+    94%, 100% {
+        content: "Analista de Sistemas";
+        text-shadow: 0 0 3px #ffffff, 0 0 5px #ffffff;
+        color: rgb(255, 39, 122);
+        filter: blur(1px);
+        filter: none;
+    }
+    
+}
+
+.presentacion{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 30px;
+    height: 100vh;
+}
+
+#inicio .seccion-principal .presentacion .descripcion{
+    max-width: 700px;
+    margin: 25px auto;
+    font-size: 18px;
+    text-align: center;
+}
+
+#inicio .seccion-principal .presentacion #btn-proyectos{
+    display: inline-block;
+    margin: 25px;
+    padding: 20px 25px;
+    border: 4px solid white;
+    text-decoration: none;
+    border-radius: 60px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .5s;
+    color: white;
+}
+
+#btn-proyectos{
+    z-index: 100;
+    transition: .7s;
+    animation-name: btnProyectos;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+#btn-proyectos:hover{
+    transform: scale(1.1);
+    background-color: #ffff;
+    cursor: pointer;
+    
+
+}
+
+@keyframes btnProyectos {
+    0% {color: goldenrod; border-color: goldenrod;}
+    25% {color: rgb(247, 80, 58);; border-color: rgb(247, 80, 58);}
+    50% {color: goldenrod; border-color: goldenrod;}
+    75% {color: rgb(247, 80, 58);; border-color: rgb(247, 80, 58);;}
+    100% {color: goldenrod; border-color: goldenrod;}
+    
+}
+
+
+
+.letra-arriba{
+    
+    display:  inline-block;
+    animation-name: subirLetra;
+    animation-duration: 6s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes subirLetra {
+    0% {transform: translateY(5px);}
+    25% {transform: translateY(-5px);}
+    50% {transform: translateY(5px);}
+    75% {transform: translateY(-5px);}
+    100% {transform: translateY(5px);}
+    
+}
+
+#letra-abajo, #descripcion{
+   
+    display:  inline-block;
+    animation-name: bajarLetra;
+    animation-duration: 8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bajarLetra {
+    0% {transform: translateY(-5px);}
+    25% {transform: translateY(5px);}
+    50% {transform: translateY(-5px);}
+    75% {transform: translateY(5px);}
+    100% {transform: translateY(-5px);}
+    
+}
+
+
+
+canvas#canvas {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+    z-index: 1;
+}
+
+.container{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    z-index: 4;
+
+    
+}
+
+.bubbles{
+    position: fixed;
+    display: flex;
+    
+}
+
+.bubbles span{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: rgb(255, 255, 255);
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px rgb(26, 26, 26),
+    0 0 50px rgb(255, 255, 255),
+    0 0 100px rgb(255, 255, 255);
+    animation: particulas 15s linear infinite;
+    bottom: 0;
+    left: 0;
+    animation-duration: calc(100s / var(--i));
+}
+
+.bubbles span:nth-child(even){
+    background: rgb(182, 60, 60);
+    box-shadow: 0 0 0 10px rgb(87, 0, 0),
+    0 0 50px rgb(182, 60, 60),
+    0 0 100px rgb(182, 60, 60);
+
+}
+
+@keyframes particulas {
+    0%{
+        transform: translateY(100vh) scale(0);
+    }
+
+    100% {
+        transform: translateY(-100vh) scale(1);
+    }
+    
+}
+
+#icono-nav{
+    color: #ffff;
+    display: none;
+}
+
+#inicio .seccion-principal header .contenedor-header .iconos-redes a{
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 12px;
+    transition: .7s;
+    color: #ffff;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+#inicio .seccion-principal header .contenedor-header .iconos-redes a:hover{
+    transform: scale(1.5);
+    color: rgb(247, 80, 58);
+}
+
+#sobremi{
+    padding: 100px 15px;
+    display: flex;
+    color: #ffffff;
+    max-width: 1100px;
+    margin: auto;
+    height: 100%;
+    
+
+}
+
+.sobremi{
+    z-index: 101;
+}
+
+#sobremi .foto-contenedor{
+    max-width: 400px;
+    margin-right: 80px;
+}
+
+#sobremi .foto-contenedor .mifoto{
+    border: 10px solid rgb(48, 33, 33);
+    width: 100%;
+    border-radius: 25px;
+    box-shadow: 5px 5px 15px #3a0101;
+    z-index: 2;
+    
+}
+
+.mifoto-entrar{
+    
+    border: 10px solid rgb(48, 33, 33);
+    width: 100%;
+    border-radius: 25px;
+    box-shadow: 5px 5px 15px #3a0101;
+    animation-name: entrar;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes entrar {
+    
+    0% {filter: blur(50px);}
+    50% {filter: blur(10px); transform: translateX(40px);}
+    100% {filter: none; transform: translateX(-1px);}
+    
+}
+
+.mifoto-mover{
+    animation-name: moverFoto;
+    animation-duration: 4s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    
+}
+
+@keyframes moverFoto {
+    0% {transform: translateY(-10px);}
+    50% {transform: translateY(10px); border-color: #111111; }
+    100% {transform: translateY(-10px); border-color: #ffffff;}    
+
+}
+
+#sobremi .sobremi{
+    margin: 0 40px;
+    
+}
+#sobremi .sobremi .seccion-titulo{
+    text-transform: uppercase;
+    font-size: 22px;
+    color: #a7a3a3;
+    text-decoration: underline;
+    text-decoration-color: #500808;
+    text-decoration-thickness: 4px;
+}
+
+#sobremi .sobremi h2{
+    font-size: 32px;
+    font-weight: bold;
+    margin: 20px 0;
+    letter-spacing: 2px;
+}
+
+#sobremi .sobremi h2 span{
+    color: #a10909;
+    animation-name: colorSobremi;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+}
+
+ @keyframes colorSobremi {
+    0% {color: #a10909;}
+    25% {color: rgb(146, 6, 60);}
+    50% {color: rgb(146, 6, 134);}
+    75% {color: rgb(141, 6, 146);}
+    100% {color: rgb(146, 6, 29);}
+    
+ }
+
+.universidad-nombre{
+    color: #ff6a6a;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-decoration: underline;
+    text-decoration-color: #a10909;
+    text-decoration-thickness: 2px;
+
+}
+
+#sobremi .sobremi h3{
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+#sobremi .sobremi p{
+    margin-bottom: 12px;
+    line-height: 25px;
+    color: #d4d4d4;
+    font-size: 16px;
+    z-index: 101;
+}
+
+#sobremi .sobremi a{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 50px;
+    background-color: #8a8a8a;
+    color: #181818;
+    border: 4px solid black;
+    box-shadow: 5px 5px 0 rgb(80, 0, 0);
+    padding: 10px 20px;
+    margin-top: 30px;
+    transition: .7s;
+    font-weight: 600;
+    text-align: center;
+    z-index: 101;
+    isolation: isolate;
+}
+
+#sobremi .sobremi a:hover{
+    z-index: 101;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+    border-color: #500808;
+
+}
+
+.foto-contenedor{
+    width: 300px;
+    position: relative;
+}
+
+#servicio{
+    text-align: center;
+    padding: 100px 15px;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(17, 0, 17, 0.7)), url('../imagenes/fondo-habilidades1.jpg');
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+}
+
+.servicio{
+    z-index: 4;
+    animation: aparecerServicios;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+
+   
+    
+}
+
+@keyframes aparecerServicios {
+    0% {filter: opacity(0%);}
+    25% {filter: opacity(25%);}
+    50% {fill: opacity(50%);}
+    75% {filter: opacity(75%);}
+    100% {filter: opacity(100%);}
+
+}
+
+#servicio{
+    z-index: 4;
+}
+
+
+
+#servicio .seccion-titulo{
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: 2px;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #500808;
+    animation: moverTitulo;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    
+}
+
+@keyframes moverTitulo {
+    0% {transform: translateY(-4px);}
+    50% {transform: translateY(4px); color: #8a8a8a;}
+    100% {transform: translateY(-4px); color: #fff;}
+    
+}
+
+#servicio .filas{
+    display: flex;
+    max-width: 1100px;
+    margin: 30px auto;
+    justify-content: center;
+    
+    
+}
+
+#servicio .filas .servicio{
+    max-width: 350px;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 0 8px;
+    transition: .7s;
+    background-color: transparent;
+    border: 3px white solid;
+    box-shadow: 1px 1px 3px #ffff, -1px -1px 3px #977676;
+}
+
+#servicio .filas .servicio:hover{
+    
+    cursor: pointer;
+    transform: scale(1.04);
+    background-color: rgba(17, 0, 17, 0.7);
+    box-shadow: 5px 5px 10px #ffff, -5px -5px 10px #977676;
+}
+
+#servicio .filas .servicio h4{
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+
+#servicio .filas .servicio .icono{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #161515;
+    padding: 20px;
+    margin-bottom: 25px;
+    border: 2px white solid;
+    align-items: center;
+    justify-content: center;
+}
+
+hr{
+    margin: auto;
+    color: rgb(255, 255, 255);
+
+    margin-bottom: 25px;
+    width: 30%;
+
+}
+
+.servicio ul{
+    letter-spacing: 1px;
+    list-style: none;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.servicio p{
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.img-dragon{
+    z-index: 0;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    position: absolute;
+    opacity: 30%;
+    animation-delay: 0;
+    animation-name: dragonRotar;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes dragonRotar {
+     
+       0% {transform: rotateZ(0deg); filter: drop-shadow(8px 8px 10px rgb(255, 255, 255));}
+       10% {transform: rotateZ(36deg); filter: none;}
+       20% {transform: rotateZ(72deg); filter: drop-shadow(8px 8px 10px rgb(255, 255, 255));}
+       30% {transform: rotateZ(108deg); filter: none;}
+       40% {transform: rotateZ(144deg);filter: drop-shadow(8px 8px 10px rgb(255, 255, 255));}
+       50% {transform: rotateZ(180deg); filter: none;}
+       60% {transform: rotateZ(216deg);filter: drop-shadow(8px 8px 10px rgb(255, 255, 255));}
+       70% {transform: rotateZ(252deg); filter: none;}
+       80% {transform: rotateZ(288deg);filter: drop-shadow(8px 8px 10px rgb(255, 255, 255));}
+       90% {transform: rotateZ(324deg); filter: none;}
+       100% {transform: rotateZ(360deg);filter: drop-shadow(8px 8px 10px rgb(255, 255, 255));}
+    
+}
+
+
+.contenedor-habilidades{
+    
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(17, 0, 17, 0.7)), url('../imagenes/fondo-habilidades3.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+    text-align: center;
+    zoom: 0.96;
+
+}
+
+
+.contenedor-habilidades .habilidad{
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.contenedor-habilidades .habilidad .informacion{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    zoom: 0.9;
+}
+
+.contenedor-habilidades .habilidad .lista{
+    height: 15px;
+    width: 15px;
+    margin-right: 20px;
+    border-radius: 50%;
+    background-color: #ffff;
+    display: inline-block;
+}
+
+.contenedor-habilidades .habilidad .barra-carga{
+    height: 6px;
+    width: 100%;
+    margin: 10px 0;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 25px #ffffff;
+    
+}
+
+.contenedor-habilidades .habilidad .barra-carga .barra-progreso1{
+    width: 95%;
+    height: 6px;
+    background-color: #970c0c;
+    animation-name: progreso1;
+    animation-iteration-count: 1; 
+    animation-duration:  3s; 
+    animation-fill-mode:  forwards;
+    animation-timing-function: ease-in-out;
+   
+}
+
+.contenedor-habilidades .habilidad .barra-carga .barra-progreso2{
+    width: 95%;
+    height: 6px;
+    background-color: #c7750b;
+    animation: progreso1 3s forwards;    
+
+}
+
+.contenedor-habilidades .habilidad .barra-carga .barra-progreso3{
+    width: 90%;
+    height: 6px;
+    background-color: #7a0345;
+    animation: progreso3 2s forwards;
+}
+
+.contenedor-habilidades .habilidad .barra-carga .barra-progreso4{
+    width: 85%;
+    height: 6px;
+    background-color: #3a012e;
+    animation: progreso4 2s forwards;
+}
+
+.contenedor-habilidades .habilidad .barra-carga .barra-progreso5{
+    width: 80%;
+    height: 6px;
+    background-color: #1e013a;
+    animation: progreso5 2s forwards;
+}
+
+.contenedor-habilidades .habilidad .barra-carga .barra-progreso6{
+    width: 80%;
+    height: 6px;
+    background-color: #012d3a;
+    animation: progreso5 2s forwards;
+    
+}
+
+/*Animaciones de cada barrita*/
+
+@keyframes progreso1 {
+    0% {width: 0%; box-shadow: 5px 5px 15px #ffffff;}
+    100% {width: 95%;}
+}
+
+@keyframes progreso3 {
+    0% {width: 0;}
+    100% {width: 90%;}
+}
+
+@keyframes progreso4 {
+    0% {width: 0;}
+    100% {width: 85%;}
+}
+
+@keyframes progreso5 {
+    0% {width: 0;}
+    100% {width: 80%;}
+}
+
+
+.contenedor-habilidades h3{
+    color: #8a8a8a;
+    letter-spacing: 3px;
+    text-decoration: underline;
+    text-decoration-color: #ff4949;
+    text-decoration-thickness: 3px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+
+
+/*Estilos de mis proyectos*/
+
+#proyectos{
+    max-width: 1100px;
+    padding: 100px 0;
+    margin: auto;
+    z-index: 5;
+
+
+    
+    
+}
+
+.proyectos{
+    z-index: 5;
+    
+}
+
+.proyecto{
+    z-index: 5;
+}
+
+#proyectos .titulo-seccion {
+    font-size: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #555555;
+    text-decoration: underline;
+    text-decoration-color: #ffff;
+    text-decoration-thickness: 4px;
+}
+
+#proyectos .fila{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+#proyectos .fila .proyecto{
+    max-width: 450px;
+    border: 2px rgb(8, 8, 8) solid;
+    margin: 0 10px;
+    position: relative;
+    overflow: hidden;
+    transition: .7s;
+    justify-content: center;
+    align-items: center;
+    border: #ffffff 3px solid;
+    border-radius: 10px;
+}
+
+#proyectos .fila .proyecto img {
+    
+    width: 450px;
+    height: 250px;
+    filter: saturate(1);
+    object-fit: cover;
+    transition: .7s;
+    filter: grayscale(0.9);
+
+}
+
+#proyectos .fila .proyecto:hover img{
+    transition: .7s;
+    filter: brightness(1.4);
+    transform: scale(1.03);
+    cursor: pointer;
+    box-shadow: 5px 5px 15px rgb(167, 2, 65);
+}
+
+
+#proyectos .fila .proyecto .info{
+    position: absolute;
+    left: 0;
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    opacity: 0;
+    transition: .7s;
+    bottom: -40px;
+
+    
+}
+
+#proyectos .fila .proyecto:hover .info{
+    box-shadow: 5px 5px 15px white;
+    cursor: pointer;
+    opacity: 0.90;
+    bottom: 0;
+    transform: scale(1.02);
+}
+
+#proyectos .fila .proyecto .info h4{
+    font-size: medium;
+}
+
+#proyectos .fila .proyecto .info p{
+    font-size: small;
+
+}
+
+#linea-aprendizaje{
+    
+    padding: 100px 0;
+    margin: auto;
+    padding: 100px 15px;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(17, 0, 17, 0.7)), url('../imagenes/fondo-historial2.jpg');
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+
+}
+
+
+#linea-aprendizaje .titulo-seccion{
+    font-size: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #555555;
+    text-decoration: underline;
+    text-decoration-color: #ffff;
+    text-decoration-thickness: 4px;
+}
+
+#linea-aprendizaje .fila{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+
+#linea-aprendizaje .fila .contenedor{
+    
+    max-width: 800px;
+    margin: 0 10px;
+    position: relative;
+    overflow: hidden;
+    transition: .7s;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#linea-aprendizaje .fila .contenedor .circulo{
+    height: 130px;
+    width: 130px;
+    margin: 20px 0;
+    border-radius: 50%;
+    padding: 20px;
+    margin-right: 20px;
+    background-color: rgb(24, 2, 15);
+    color: white;
+    border: 4px solid rgb(175, 6, 62);
+    font-size: 17px;
+    align-items: center;
+    text-align: center;
+    font-weight: 600;
+    box-shadow: 5px 5px 15px rgb(175, 6, 62);
+    animation: brillar;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    
+}
+
+@keyframes brillar {
+    0% {filter: none;}
+    25% {filter: brightness(1.5);}
+    50% {filter: none;}
+    75% {filter: brightness(1.5);}
+    100% {filter: none}
+    
+}
+
+#contacto{
+    padding: 100px 15px;
+    position: relative;
+
+
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('../imagenes/contacto.jpg');
+    background-size: cover;
+    background-position: center center;
+    
+}
+
+.contacto{
+    z-index: 5;
+    
+}
+
+#contacto .titulo-seccion{
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: white;
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-decoration-color: #a10909;
+}
+
+#contacto .contenedor-formulario {
+    max-width: 1100px;
+    margin: auto;
+
+}
+
+
+#contacto .contenedor-formulario .fila{
+    margin-bottom: 15px;
+
+}
+
+#contacto .contenedor-formulario .mitad{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+#contacto .contenedor-formulario input,
+#contacto .contenedor-formulario textarea{
+    padding: 20px;
+    border-radius: 0px 25px 25px;
+    border: #201f20 4px solid;
+    background-color: #fff;
+    transition: .7s;
+    z-index: 5;
+    
+
+}
+
+#contacto .contenedor-formulario input:hover,
+#contacto .contenedor-formulario textarea:hover{
+    border: #9b0915 4px solid;
+}
+
+#contacto .contenedor-formulario textarea{
+    height: 250px;
+}
+
+#contacto .contenedor-formulario .mitad input{
+    width: 48%;
+}
+
+#contacto .contenedor-formulario .input-full{
+    width: 100%;
+    z-index: 106;
+}
+
+#contacto .btn-enviar{
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: .7s;
+    z-index: 5;
+    isolation: 10;
+}
+
+#contacto .btn-enviar:hover{
+    color: #9e1225;
+    background-color: white;
+    transform: scale(1.2);
+}
+#contacto h4{
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-decoration-thickness: 4px;
+    text-decoration-color: #970c0c;
+    color: #e0e0e0;
+    letter-spacing: 2px;
+    
+}
+
+#contacto .location{
+    max-width: 800px;
+    padding: 10px 15px;
+    display: block;
+    margin: 60px auto;
+
+}
+
+
+footer{
+    background-color: #0000;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+    z-index: 5;
+}
+
+footer a{
+    color: white;
+    display: inline-block;
+    margin-top: 6px;
+    font-size: 30px;
+    margin-right: 10px;
+    text-decoration: none;
+    z-index: 5;
+}
+
+footer .container-fluid{
+    z-index: 5;
+
+}
+
+
+/*Haciendo mi página responsiva*/
+
+@media screen and (max-width:800px){
+    .iconos-redes {
+        display: none;
+    }
+    nav{
+        display: none;
+    }
+
+    nav.responsive{
+        display: block;
+        background-color: rgba(0, 0, 0, .7);
+        width: 100%;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        padding: 10px 0;
+    }
+
+    nav.responsive ul {
+        display: block !important;
+        text-align: center;
+    }
+
+    nav.responsive ul li{
+        margin: 5px 0;
+    }
+
+    #icono-nav {
+        display: block;
+    }
+
+    #inicio .seccion-principal .presentacion h2{
+        font-size: 40px;
+    }
+    #inicio .seccion-principal .presentacion #descripcion{
+        text-align: center;
+    }
+    #sobremi{
+        padding: 50px 0;
+        display: block;
+    }
+
+    #sobremi .foto-contenedor{
+        max-width: 200px;
+        margin: auto;
+    }
+
+    #sobremi .foto-contenedor img{
+        padding: 8px;
+        margin-bottom: 20px;
+    }
+
+    #sobremi .sobremi .seccion-titulo,
+    #sobremi .sobremi p{
+        text-align: center;
+    }
+
+    #sobremi .sobremi h2,
+    #sobremi .sobremi h3{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    #sobremi .sobremi #btn-curriculo{
+        display: flex;
+    }
+
+    #servicio {
+        padding: 50px 15px;
+        
+    }
+
+    #servicio .filas {
+        display: block;
+        
+    }
+
+    #servicio .filas .servicio{
+        margin: 10px auto;
+        margin-bottom: 20px;
+    }
+
+    #habilidades{
+        padding: 50px 20px;
+    }
+
+    #proyectos {
+        padding: 50px 0;
+    }
+
+    #proyectos .fila{
+        display: block;
+
+    }
+
+    #proyectos .fila .proyecto{
+        margin: 20px auto;
+    }
+
+    #linea-aprendizaje{
+        padding: 50px 0px;
+    }
+
+    #linea-aprendizaje .fila {
+        display: block;
+    }
+
+    #linea-aprendizaje .fila .contenedor{
+        display: block;
+        
+    }
+
+    #linea-aprendizaje .fila .contenedor .circulo{
+        margin: 20px auto;
+    }
+
+    #contacto {
+        padding: 50px 15px;
+    }
+    #contacto .contenedor-formulario .mitad{
+        margin-bottom: 15px;
+        display: block;
+    }
+
+    #contacto .contenedor-formulario .mitad input{
+        width: 100%;
+        margin-bottom: 15px;
+
+    }
+
+
+
+}
+
+
+/* Personalizar la scroll bar */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #000000; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #a10b0b; 
+  }
